@@ -1,0 +1,24 @@
+{
+  "name": "php1",
+  "version": "1.0.0",
+  "description": "php program",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prettier":"prettier"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dking1342/php-intro.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dking1342/php-intro/issues"
+  },
+  "homepage": "https://github.com/dking1342/php-intro#readme",
+  "devDependencies": {
+    "@prettier/plugin-php": "^0.18.9",
+    "prettier": "^2.7.1"
+  }
+}
