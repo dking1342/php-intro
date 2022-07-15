@@ -1,45 +1,43 @@
 <?php
 
-/* -------- Loops & Iteration ------- */
+for($x = 0; $x <= 10; $x++){
+  echo "Number is $x <br>";
+}
 
-/* ------------ For Loop ------------ */
+$index = 1;
+while($index <= 15){
+  echo "Number is $index <br>";
+  $index++;
+};
 
-/*
-** For Loop Syntax
-  for (initialize; condition; increment) {
-  // code to be executed
-  }
-*/
+do {
+  echo "Do is $index <br>";
+  $index++;
+} while ($index <= 30);
 
+$posts = ['Post One', 'Post Two', 'Post Three'];
 
-/* ------------ While Loop ------------ */
+for($i = 0; $i < count($posts); $i++){
+  echo "for: $posts[$i] <br>";
+}
 
-/*
-** While Loop Syntax
-  while (condition) {
-  // code to be executed
-  }
-*/
+foreach($posts as $post){
+  echo "foreach: $post <br>";
+}
 
+foreach ($posts as $index => $post) {
+  echo "foreach index: $index - $post <br>";
+}
 
-/* ---------- Do While Loop --------- */
+$person = [
+  'first_name' => 'Brad',
+  'last_name' => 'Traversy',
+  'email' => 'brad@gmail.com',
+];
 
-/*
-** Do While Loop Syntax
-  do {
-  // code to be executed
-  } while (condition);
-
-do...while loop will always execute the block of code once, even if the condition is false.
-*/
-
-
-
-/* ---------- Foreach Loop ---------- */
-
-/*
-** Foreach Loop Syntax
-  foreach ($array as $value) {
-  // code to be executed
-  }
-*/
+foreach($person as $key => $value){
+  echo "key: $key - value: $value <br>";
+}
+foreach($person as $p){
+  echo "value: $p <br>";
+}
