@@ -1,24 +1,34 @@
 <?php
 
-/* ----- Variables & Data Types ----- */
+$name = "Kavooce"; // string
+$age = 20; // int
+$has_children = false; // boolean
+$is_married = true; // boolean
+$cash = 20.75; // float
 
-/* --------- PHP Data Types --------- */
-/*
-- String - A string is a series of characters surrounded by quotes
-- Integer - Whole numbers
-- Float - Decimal numbers
-- Boolean - true or false
-- Array - An array is a special variable, which can hold more than one value
-- Object - A class
-- NULL - Empty variable
-- Resource - A special variable that holds a resource
-*/
+$sum = 5 + 5;
+$sum10 = '5' + '5';
 
-/* --------- Variable Rules --------- */
-/*
-- Variables must be prefixed with $
-- Variables must start with a letter or the underscore character
-- variables can't start with a number
-- Variables can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
-- Variables are case-sensitive ($name and $NAME are two different variables)
-*/
+echo "$name <br>";
+echo "$age <br>";
+echo "$has_children <br>";
+var_dump($has_children);
+echo "<br>";
+echo "$is_married <br>";
+echo "$cash <br>";
+
+echo "$cash is the amount of money i have <br>";
+echo "$name is $age years old <br>";
+echo 5 + 5 . "<br>";
+echo "5" + "5" . "<br>";
+echo "$sum + $sum10 <br>";
+echo $sum + $sum10 . "<br>";
+
+// constants
+define("HOST", "localhost");
+define("DB_NAME", "dev_db");
+echo HOST . "<br>";
+echo DB_NAME . "<br>";
+var_dump(HOST);
+
+?>
