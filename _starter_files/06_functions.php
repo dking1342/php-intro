@@ -1,14 +1,35 @@
 <?php
-/* ------------ Functions ----------- */
 
-/*
-  Functions are reusable blocks of code that we can call to perform a specific task.
-  We can pass values into functions to change their behavior. Functions have their own local scope as opposed to global scope
+$y = 10;
+function registerUser(){
+  global $y;
+  echo "global variable $y <br>";
+  echo "user registered function <br>";
+}
+registerUser();
 
+function register($email){
+  echo "Email: $email <br>";
+}
+register("email@example.com");
 
-/*
-** Function Syntax
-  function functionName($arg1, $arg2, ...) {
-    // code to be executed
-  }
-*/
+function sum($n1, $n2){
+  return $n1 + $n2;
+}
+$add = sum(5,3);
+echo "Sum: " . sum(5,3) . "<br>";
+echo "Add: $add <br>";
+
+function summer($n1 = 1, $n2 = 2){
+  return $n1 + $n2;
+}
+echo "Summer: " . summer() . "<br>";
+
+$subtract = function($n1, $n2){
+  return $n1 - $n2;
+};
+echo "subtract: " . $subtract(10,5) . "<br>";
+
+$multiply = fn($n1, $n2) => $n1 * $n2;
+echo "multiply: " . $multiply(10,5) . "<br>";
+
